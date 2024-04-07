@@ -59,6 +59,7 @@ nav{
     color: black;
     height: 100%;
     align-content: center;  
+    padding-top: 20px;
 }
 .hd_link:last-of-type{
     padding-left: 10px;
