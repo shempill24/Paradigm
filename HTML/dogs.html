@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet - Dogs</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+<header>    
+    <a href="/HTML/index.html"><img class="logo" src="/Assets/logo.svg" alt="home logo"></a>
+    <nav>
+        <ul class="hd_nav">
+            <a class="hd_link" href="/HTML/cats.html"><li>Cats</li></a>
+            <a class="hd_link" href="/HTML/dogs.html"><li>Dogs</li></a>
+            <a class="hd_link" href="/HTML/birds.html"><li>Birds</li></a>
+            <a class="hd_link" href="/HTML/fish.html"><li>Fish</li></a>
+            <a class="hd_link" href="/HTML/sm_anim.html"><li>Small Animals</li></a>
+        </ul>
+    </nav> 
+    <div class="sec_nav">
+    <form action="">
+        <input class="nav_search" type="text" style= height:30px placeholder="Search">
+        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" >
+            <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+            </svg></button>
+    </form>
+    <div onclick="showPop()" class="hd_link"><p>Schedule</p> <p>Consultation</p></div>
+</div>
+</header>   
+<main>
+    
+        <div class="layer_image">
+            <img class="dog img" src="/Assets/dog_main.jpg" alt="Black and white patch kitten sitting by window">
+         
+        </div>
+        <div class="grid_wrapper">
+            <aside>
+                <a href="/HTML/cats.html" class="card_selection "><h4>CATS</h4></a>
+                <a href="/HTML/dogs.html" class="card_selection color"><h4>DOGS</h4></a>
+                <a href="/HTML/birds.html" class="card_selection"><h4>BIRDS</h4></a>
+                <a href="/HTML/fish.html" class="card_selection"><h4>FISH</h4></a>
+                <a href="/HTML/sm_anim.html" class="card_selection"><h4>SMALL <br> ANIMALS</h4></a>
+            </aside>
+        <section class="first_section">
+            <br>
+        <p class="first_section_copy">The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.
+        </p>
+        </section>
+        <section class="second_section">
+        <hr>
+        <p class="second_section_copy">
+            <br>
+            <h3 class="center_text"> Diet & Exercise</h3>
+    
+            <br>
+            Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months years old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. And a dog’s typical body mass is composed of somewhere between 60 and 70 percent water. The ASPCA says just a 10 percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated!
+
+            Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as well as sun and fresh air. The minimum recommended time for exercise varies greatly with breed and size differences, but generally a range of 30–120 minutes of exercise is recommended per day! Can you imagine exercising two hours per day? OK, I know that wouldn't bother some of you reading this. But the thought of it to me makes me cringe! And by the way, exercising your dog does not mean you are being challenged to a push-up contest. Brisk walks are OK too! You can also choose from a variety of toys to encourage physical activity; just be sure they are age appropriate and do not pose a choking hazard. Pay careful attention to toys that require supervision.
+            <br>
+            <br>
+            <h3 class="center_text"> Grooming & Handling</h3>
+            <br>
+            Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas. Bathing is not only important to your dog’s health but can be an exercise depending on how strong willed the dog is. Rinse all of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.
+            <br>
+            <br>
+            <h3 class="center_text"> Vaccinations & Medications</h3>
+            <br>
+            You should <b>always</b> consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.      
+            <br>
+            <br>
+    </section>
+    <section id="popup" class="invisible flex">
+        <div class="windowpop">
+            <div class="popformheader">
+        <h2 class="formtitle">Schedule time with our Pexperts</h2>
+        <div class="close"><ion-icon name="close-circle-outline" onclick="closePop()"></ion-icon></div>
+    </div>
+        <form class="schedule_pex" action="" method="post">
+            <fieldset>
+                <h3>Owner Information:</h3> 
+                <br>   
+                <label for="owner_name">Name:</label>
+                <br>
+                <input id="owner_name" name="owner_name" type="text"><br>
+                <label for="owner_email">Email:</label>
+                <br>
+                <input id="owner_email" name="owner_email" type="text">
+                <div class="containerflexrow">
+                    <div class="containerhalfform containerflexrow">
+                        <div class="formcontainer">
+                            <label for="owner_number">Phone Number:</label>
+                            <br>
+                            <input  type="text">
+                        </div>
+                        <div class="formcontainer">
+                        <label for="">Time Zone:</label>
+                        <br>
+                        <input type="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h3>Pet Information:</h3>
+                <br>
+                <label for="">Name:</label>
+                <br>
+                <input id="pet_name" type="text">
+    
+                <div class="containerhalfform containerflexrow">
+                    <div class="formcontainer">
+                <label for="">Type of Pet:</label> <br>
+                <input type="text">
+                </div>
+                <div class="formcontainer">
+                <label for="">Age:</label> <br>
+                <input type="number" min="0">
+            </div>
+                </div>
+            </fieldset>
+        <div class="formbutton">
+        <button onclick="">Reset</button>
+        <button onclick="">Submit</button>
+        </div>
+        </form>
+    </div>
+    </section>
+</main>  
+<footer>
+    <ul class="ft_nav">
+        <a class="ftlink" href="/HTML/index.html"><li>Home</li></a>
+        <a class="ftlink" href="/HTML/cats.html"><li>Cats</li></a>
+        <a class="ftlink" href="/HTML/dogs.html"><li>Dogs</li></a>
+        <a class="ftlink" href="/HTML/birds.html"><li>Birds</li></a>
+        <a class="ftlink" href="/HTML/fish.html"><li>Fish</li></a>
+        <a class="ftlink" href="/HTML/sm_anim.html"><li>Small Animals</li></a>
+    </ul>
+    <div class="brand_prom">
+        <p style="font-style: italic;">Evidence-based pet care advice for every pet lover.</p>
+        <p>Paradigm Pet Professionals ©</p>
+    </div>
+</footer>
+<script>
+    function showPop(){  
+      document.getElementById("popup").classList.remove('invisible');
+    };
+    function closePop(){
+        document.getElementById("popup").classList.add('invisible');
+    };
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>

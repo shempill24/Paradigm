@@ -1,0 +1,351 @@
+
+/* Reseting baseline and establishing color variables */
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary-midnight: #003b6d;
+    --secondary-silver: #bdbdbd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Max/Min width for webpage */
+main, header{
+    max-width: 1400px;
+    min-width: 1200px;
+}
+
+
+/* Header & Footer Template */
+header{
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px; 
+    height: 110px;
+    padding-top: 10px;
+}
+header a:hover{
+    color: #bdbdbd;
+
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    align-items: center;
+}
+
+.hd_nav{
+    font-size: 20px;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+.hd_link{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    align-content: center;  
+}
+.hd_link:last-of-type{
+    padding-left: 10px;
+}
+
+/* Search */
+form{
+    width: 250px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.sec_nav{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_search{
+    height: 100%;
+    padding-left: 10px;
+}
+
+
+/* footer */
+footer{
+    background-color: var(--secondary-silver) ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px; 
+    height: 70px;
+    padding-top: 10px;
+ 
+    
+}
+footer a:hover{
+    color: var(--primary-midnight);
+}
+.ft_nav{
+    font-size: 20px;
+    width: 55%;
+    max-width: 700px;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.ftlink{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    
+}
+.brand_prom{
+    width: 400px;
+    text-align: right;
+    font-size:.6em;
+}
+
+/* Gen Purpose Tags */
+.flex{
+    display: flex;
+}
+.containerflexrow{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 40px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size:1.2em;
+
+}
+
+
+
+/* Main - Section 1 - Welcome */
+.main_index{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 15px;
+    margin: 15px 15px;
+}
+.about .adoption{
+    justify-self: center;
+}
+.welcomeimg{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+.title{
+    position: relative;
+    top: -40px;
+    background-color: var(--secondary-silver);
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+
+}
+
+/* Main - third Section*/
+.adoption{
+    grid-column: 1;
+    justify-self: center;
+}
+/* Base - form */
+.formsection{
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    justify-self: center;
+    color: white;
+}
+.formtitle{
+    padding: 15px;
+    color: white;
+    border-radius: 5px 5px 0 0 ;
+    background-color: var(--primary-midnight);
+}
+
+.schedule_pex{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 15px;
+    width: 100%;
+    border: 3px solid rgba(128, 128, 128, 0.451);
+    background-color: rgba(221, 221, 222, 0.318);
+    border-radius: 0 0 6px 6px;
+}
+
+.schedule_pex input{
+    height: 35px;
+    margin: 10px 0;
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+}
+#owner_name, #owner_email, #pet_name{
+    width: 100%;
+
+}
+.formbutton{
+    display: flex;
+    justify-content:space-around;
+    gap: 15px;
+
+ }
+.schedule_pex button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+}
+button:hover{
+    color: #bdbdbd;
+}
+
+.formcontainer{
+    width: 19vw;
+
+
+}
+.formcontainer input{
+    width: 100%;
+}
+
+/* Consultant Pop-up */
+#popup{
+    position: absolute;
+    width: 100vw;
+    top: 30px;
+    justify-content: center;
+    
+
+
+
+
+}
+.popformheader{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0 ;
+    background-color: var(--primary-midnight);
+
+}
+.close{
+    background-color:var(--primary-midnight);
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-right: 5px;
+
+}
+
+.windowpop{
+    background-color: rgb(255, 255, 255);
+
+   
+}
+ion-icon{
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.invisible{
+    display: none;
+}
+
+
+
+/* Pet Pages */
+main{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.img{
+    max-height: 70vh;
+    width: 100vw;
+    max-width: 1400px;
+    min-width: 1200px;
+    justify-self: center;
+    border-radius: 20px;
+}
+
+/* Pet Page Copy */
+
+.first_section, .second_section{
+    line-height: 2em;
+    grid-column: 2;
+}
+.text_left_align{
+    text-align: unset;
+}
+.grid_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 15px;
+
+}
+
+.center_text{
+    text-align: center;
+}
+
+/* Secondary Navigation */
+
+.card_selection{
+    height: 200px;
+    width: 200px;
+    background-color: var(--secondary-silver);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: none;
+}
+.card_selection:hover{
+    background-color:var(--primary-midnight)
+}
+aside{
+    margin: 0 0 0 30px;
+    grid-area: span 2;
+}
+.color{
+    background-color: var(--primary-midnight);
+}

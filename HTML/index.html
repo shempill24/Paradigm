@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+<header>    
+    <a href="/HTML/index.html"><img class="logo" src="/Assets/logo.svg" alt="home logo"></a>
+    <nav>
+        <ul class="hd_nav">
+            <a class="hd_link" href="/HTML/cats.html"><li>Cats</li></a>
+            <a class="hd_link" href="/HTML/dogs.html"><li>Dogs</li></a>
+            <a class="hd_link" href="/HTML/birds.html"><li>Birds</li></a>
+            <a class="hd_link" href="/HTML/fish.html"><li>Fish</li></a>
+            <a class="hd_link" href="/HTML/sm_anim.html"><li>Small Animals</li></a>
+        </ul>
+    </nav> 
+    <div class="sec_nav">
+    <form action="">
+        <input class="nav_search" type="text" style= height:30px placeholder="Search">
+        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" >
+            <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+            </svg></button>
+    </form>
+    <div onclick="showPop()" class="hd_link"><p>Schedule</p> <p>Consultation</p></div>
+</div>
+</header>   
+<main class="main_index">
+<section class="about">
+    <div class="layer_image">
+        <img class="welcomeimg" src="/Assets/welcome.jpg" alt="Dog running in green grass with large stick">
+    </div>
+    <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+
+    Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion. 
+    </p>
+</section>
+<section class="adoption">
+    <hr>
+    <br>
+    <p>Looking for your new best friend? The following organizations can help you find and adopt the perfect companion: 
+        <br>
+        <br>
+        •	General Adoption Resources: <br><a href="https://theshelterpetproject.org/ ">https://theshelterpetproject.org/ </a>
+        <br>
+        •	ASPCA: <br>
+        <a href="https://www.aspca.org/">https://www.aspca.org/</a> 
+        <br>
+        •	Fish Rescue: <br> <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/">https://www.sterlingshelter.org/humane-society/koi-fish-rescue/</a>
+        <br>
+        •	Snake Rescue: <br> <a href="https://savethesnakes.org/snakerescuecall/">https://savethesnakes.org/snakerescuecall/</a> 
+        <br>
+        •	Bird Rescue: <br><a href="https://ftlob.rescuegroups.org/">https://ftlob.rescuegroups.org/</a> 
+        <br>
+        
+        We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.
+        </p>
+</section>
+<section class="formsection">
+    <h2 class="formtitle">Schedule time with our Pexperts</h2>
+ 
+    <form class="schedule_pex" action="" method="post">
+        <fieldset>
+            <h3>Owner Information:</h3> 
+            <br>   
+            <label for="owner_name">Name:</label>
+            <br>
+            <input id="owner_name" name="owner_name" type="text"><br>
+            <label for="owner_email">Email:</label>
+            <br>
+            <input id="owner_email" name="owner_email" type="text">
+            <div class="containerflexrow">
+                <div class="containerhalfform containerflexrow">
+                    <div class="formcontainer">
+                        <label for="owner_number">Phone Number:</label>
+                        <br>
+                        <input  type="text">
+                    </div>
+                    <div class="formcontainer">
+                    <label for="">Time Zone:</label>
+                    <br>
+                    <input type="">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Pet Information:</h3>
+            <br>
+            <label for="">Name:</label>
+            <br>
+            <input id="pet_name" type="text">
+
+            <div class="containerhalfform containerflexrow">
+                <div class="formcontainer">
+            <label for="">Type of Pet:</label> <br>
+            <input type="text">
+            </div>
+            <div class="formcontainer">
+            <label for="">Age:</label> <br>
+            <input type="number" min="0">
+        </div>
+            </div>
+        </fieldset>
+    <div class="formbutton">
+    <button onclick="">Reset</button>
+    <button onclick="">Submit</button>
+    </div>
+    </form>
+
+</section>
+<section id="popup" class="invisible flex">
+    <div class="windowpop">
+        <div class="popformheader">
+    <h2 class="formtitle">Schedule time with our Pexperts</h2>
+    <div class="close"><ion-icon name="close-circle-outline" onclick="closePop()"></ion-icon></div>
+</div>
+    <form class="schedule_pex" action="" method="post">
+        <fieldset>
+            <h3>Owner Information:</h3> 
+            <br>   
+            <label for="owner_name">Name:</label>
+            <br>
+            <input id="owner_name" name="owner_name" type="text"><br>
+            <label for="owner_email">Email:</label>
+            <br>
+            <input id="owner_email" name="owner_email" type="text">
+            <div class="containerflexrow">
+                <div class="containerhalfform containerflexrow">
+                    <div class="formcontainer">
+                        <label for="owner_number">Phone Number:</label>
+                        <br>
+                        <input  type="text">
+                    </div>
+                    <div class="formcontainer">
+                    <label for="">Time Zone:</label>
+                    <br>
+                    <input type="">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Pet Information:</h3>
+            <br>
+            <label for="">Name:</label>
+            <br>
+            <input id="pet_name" type="text">
+
+            <div class="containerhalfform containerflexrow">
+                <div class="formcontainer">
+            <label for="">Type of Pet:</label> <br>
+            <input type="text">
+            </div>
+            <div class="formcontainer">
+            <label for="">Age:</label> <br>
+            <input type="number" min="0">
+        </div>
+            </div>
+        </fieldset>
+    <div class="formbutton">
+    <button onclick="">Reset</button>
+    <button onclick="">Submit</button>
+    </div>
+    </form>
+</div>
+</section>
+
+</main>  
+<footer>
+    <ul class="ft_nav">
+        <a class="ftlink" href="/HTML/index.html"><li>Home</li></a>
+        <a class="ftlink" href="/HTML/cats.html"><li>Cats</li></a>
+        <a class="ftlink" href="/HTML/dogs.html"><li>Dogs</li></a>
+        <a class="ftlink" href="/HTML/birds.html"><li>Birds</li></a>
+        <a class="ftlink" href="/HTML/fish.html"><li>Fish</li></a>
+        <a class="ftlink" href="/HTML/sm_anim.html"><li>Small Animals</li></a>
+    </ul>
+    <div class="brand_prom">
+        <p style="font-style: italic;">Evidence-based pet care advice for every pet lover.</p>
+        <p>Paradigm Pet Proffessionals ©</p>
+    </div>
+</footer>  
+<script>
+    function showPop(){  
+      document.getElementById("popup").classList.remove('invisible');
+    };
+    function closePop(){
+        document.getElementById("popup").classList.add('invisible');
+    };
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
