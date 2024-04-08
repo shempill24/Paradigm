@@ -20,8 +20,8 @@
     </nav> 
     <div class="sec_nav">
     <form action="">
-        <input class="nav_search" type="text" style= height:30px placeholder="Search">
-        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" >
+        <input class="nav_search" id="txtSearch"  type="text" style= height:30px placeholder="Search">
+        <button type="submit" onclick="searchG()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" >
             <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
             </svg></button>
     </form>
@@ -33,11 +33,18 @@
     <div class="layer_image">
         <img class="welcomeimg" src="./Assets/Welcome.jpg" alt="cat laying down in oval and dog with bowl, image says Welcome to Paradigm Pet Professionals">
     </div>
-    <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+    <p class="main_copy">Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
 
     Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion. 
     </p>
 </section>
+<div class="containerflexrow sec_nav2">
+    <a href="cats.html" class="card_selection "><h4>CATS</h4></a>
+    <a href="dogs.html" class="card_selection "><h4>DOGS</h4></a>
+    <a href="birds.html" class="card_selection"><h4>BIRDS</h4></a>
+    <a href="fish.html" class="card_selection"><h4>FISH</h4></a>
+    <a href="sm_anim.html" class="card_selection"><h4>SMALL <br> ANIMALS</h4></a>
+</div>
 <section class="adoption">
     <hr>
     <br>
@@ -181,7 +188,14 @@
         <p style="font-style: italic;">Evidence-based pet care advice for every pet lover.</p>
         <p>Paradigm Pet Proffessionals ©</p>
     </div>
-</footer>  
+</footer>
+<script>
+    function searchG(){
+        console.log(document.getElementById('txtSearch').value)
+        window.location ='http://www.google.com/search?q=site:shempill24.github.io/Paradigm/' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>  
 <script>
     function showPop(){  
       document.getElementById("popup").classList.remove('invisible');

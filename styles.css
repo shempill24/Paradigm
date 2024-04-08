@@ -27,7 +27,7 @@ header{
     height: 110px;
     padding-top: 10px;
 }
-header a:hover{
+header a:hover, .hd_link:last-of-type:hover{
     color: #bdbdbd;
 
 }
@@ -63,7 +63,9 @@ nav{
 }
 .hd_link:last-of-type{
     padding-left: 10px;
+    cursor: pointer;
 }
+
 
 /* Search */
 form{
@@ -76,7 +78,7 @@ form{
 .sec_nav{
     width: 550px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
 }
@@ -142,15 +144,18 @@ p{
     font-size:1.2em;
 
 }
-
+.border{
+    border: 3px solid black;
+}
 
 
 /* Main - Section 1 - Welcome */
 .main_index{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 15px;
+    gap: 15px 10px;
     margin: 15px 15px;
+    font-size: .9em;
 }
 .about .adoption{
     justify-self: center;
@@ -160,6 +165,9 @@ p{
     height: auto;
     border-radius: 20px;
     
+}
+.main_copy{
+    padding: 0;
 }
 
 .title{
@@ -173,10 +181,18 @@ p{
 
 }
 
+.sec_nav2{
+    grid-column: span 2;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
 /* Main - third Section*/
 .adoption{
     grid-column: 1;
     justify-self: center;
+    grid-column: span 2;
 }
 /* Base - form */
 .formsection{
